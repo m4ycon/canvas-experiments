@@ -61,8 +61,13 @@ function animate() {
   })
 }
 
+window.addEventListener('resize', function() {
+  canvas.height = this.innerHeight;
+  canvas.width = this.innerWidth;
+})
+
 let yVariation = 5;
 let palette = ['#3D6FFF', '#3888E8', '#4AC0FF', '#38CDE8', '#3DFFF5'];
-let circleArray = createCircles(1500);
+let circleArray = createCircles(300);
 
 animate();

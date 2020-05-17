@@ -1,0 +1,37 @@
+.star-canvas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #202020;
+  z-index: -1;
+  transition: filter 300ms;
+}
+
+.btn-theme {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  transition: filter 300ms;
+}
+
+.btn-theme:hover {
+  text-shadow: unset;
+}
+
+.btn-theme i {
+  color: #202020;
+  font-size: 1.8em;
+}
+
+.invert {
+  filter: invert(1);
+}
